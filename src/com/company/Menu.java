@@ -71,4 +71,20 @@ public class Menu {
         return numberOfCabinets;
     }
 
+    private void ListAllShelves(){
+        if(myCabinets[0]==null){
+            System.out.println("There are no cabinets yet!");
+            Validator.validateString();
+        }
+        else{
+            //Loop through the array[] myCabinets, to find out how many elements of cabinet have been added already
+            for(int i=0; i<myCabinets.length; i++) {
+                if (myCabinets[i] == null) {
+                    break;
+
+                }
+
+            }
+        }
+    }
 }
