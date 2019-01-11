@@ -44,6 +44,45 @@ public class Menu {
                 }
             }
         }
+        else if(choice==2){
+            int cabinetNumber= 0;
+            int numberOfAvailableCabinets= ListAllCabinets(); //to show what cabinets are available
+            if(myCabinets[0]!=null)//This means we have at least one cabinet
+            {
+                //We need to catch exceptions if the user enters an invalid number
+                //Two exceptions(NullPointException and ArrayIndexOutOfBound
+                try {
+                    System.out.println("Please specify which cabinet to add the shelf to: {1-" + numberOfAvailableCabinets);
+                    cabinetNumber = Validator.validateInteger();
+
+                    //Pass the cabinet number which the shelf to be added
+                    myCabinets[cabinetNumber-1].AddShelf(cabinetNumber);
+                }
+                catch(NullPointerException e){
+                    System.out.println("No cabinets with this number, press enter to return to the Menu");
+                    Validator.validateString();
+                }
+                catch(ArrayIndexOutOfBoundsException e){
+                    System.out.println("The largest cabinet number is  " + cabinetNumber + " press enter to return to the Menu");
+                    Validator.validateString();
+                }
+
+            }
+
+        }
+        else if(choice==3){
+            System.out.println("Choice 3 was selected");
+        }
+        else if(choice==4){
+            System.out.println("Choice 4 was selected");
+        }
+        else if(choice==5){
+            System.out.println("Choice 5 was selected");
+
+        }
+        else if(choice == 6){
+            System.out.println("Choice 6 was selected");
+        }
 
     }
 
