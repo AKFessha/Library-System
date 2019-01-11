@@ -77,4 +77,25 @@ public class Cabinet {
         Validator.validateString();
     }
 
+    //Add shelves to  the specific cabinet, it calls a method in the shelf class to enter the shelf details
+    public void AddShelf(int cabinetNumber) {
+
+        for (int j = 0; j < myShelves.length; j++) {
+            // if the array my shelves has no null shelf object (Array is full) then break out of loop
+            if (myShelves[myShelves.length - 1] != null) {
+                System.out.println("You can not add any more shelves to Cabinet (" + (cabinetNumber) + ")[" + getCabinetTitle() + "], please " + "press any key to return to the main menu");
+                Validator.validateString();
+                break;
+            }
+            //At the first encounter of a null object in the array, add a shelf object
+            else if (myShelves[j] == null) {
+                myShelves[j] = new Shelf();
+                myShelves[j].ShelfDetails(cabinetNumber, j + 1, getCabinetTitle());
+                break;
+            }
+//
+        }
+    }
+
+
 }

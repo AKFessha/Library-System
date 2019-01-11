@@ -40,7 +40,7 @@ public class Shelf {
     }
 
     //Shelf details
-    public void shelfDetails(int i,int n, String cabinetTitle){
+    public void ShelfDetails(int i,int n, String cabinetTitle){
 
     }
 }
