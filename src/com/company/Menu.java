@@ -83,6 +83,23 @@ public class Menu {
         else if(choice == 6){
             System.out.println("Choice 6 was selected");
         }
+        else if(choice==7){
+            System.out.println("Choice 7 was selected");
+
+            System.out.println("Are you sure you want to exit [Yes , No]: ");
+            String exit= Validator.validateString().toLowerCase();
+            if(exit.toLowerCase().equals("yes")){
+                System.out.println("Exit");
+                System.out.println("Thank you bye bye !!");
+                System.out.close();
+            }
+            if (!exit.equals("yes") || !exit.equals("no")){
+                System.out.println("Please type \"Yes\" or \"No\" \n " + "you will return to the main menu!!!");
+                System.out.println("Please press Enter to continue: ");
+                Validator.validateString();
+            }
+
+        }
 
     }
 
