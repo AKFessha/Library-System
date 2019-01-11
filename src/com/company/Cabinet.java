@@ -77,6 +77,11 @@ public class Cabinet {
         Validator.validateString();
     }
 
+
+    public void DisplayCabinetDetails(int i) {
+        System.out.println("Title of Cabinet (" + (i + 1) + ")=[" + getCabinetTitle() + "]\n");
+    }
+
     //Add shelves to  the specific cabinet, it calls a method in the shelf class to enter the shelf details
     public void AddShelf(int cabinetNumber) {
 
