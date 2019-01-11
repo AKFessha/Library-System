@@ -84,7 +84,6 @@ public class Menu {
             System.out.println("Choice 6 was selected");
         }
         else if(choice==7){
-            System.out.println("Choice 7 was selected");
 
             System.out.println("Are you sure you want to exit [Yes , No]: ");
             String exit= Validator.validateString().toLowerCase();
