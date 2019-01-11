@@ -4,7 +4,7 @@ import java.lang.invoke.SwitchPoint;
 
 public class Menu {
     Cabinet[] myCabinets = new Cabinet[2];
-    public void displayMenu(){
+    public void DisplayMenu(){
 
         int choice=0;
         while(choice!=7){
