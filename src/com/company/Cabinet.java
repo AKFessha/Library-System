@@ -58,6 +58,23 @@ public class Cabinet {
 
 
 
+//Cabinet details
+    public void CabinetDetails(int i){
+        String title= "";
+        do {
+            System.out.println("Please enter the title of the Cabinet: ");
+            title = Validator.validateString();
+            setCabinetTitle(title);
+            if(title== "" || title !=null){
+                System.out.println("Please enter proper title: ");
 
+            }
+        }
+         while (title.equals("") || title.equals(null));
+        System.out.println("\nCabinet titled \"" + getCabinetTitle() + "\" was successfully added \n");
+        setNumber(i + 1);
+        System.out.println("Press Enter to Continue");
+        Validator.validateString();
+    }
 
 }
