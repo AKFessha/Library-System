@@ -126,6 +126,7 @@ public class Menu {
         return numberOfCabinets;
     }
 
+    // Check and list all shelves
     private void ListAllShelves(){
         if(myCabinets[0]==null){
             System.out.println("There are no cabinets yet!");
@@ -141,5 +142,10 @@ public class Menu {
 
             }
         }
+    }
+
+    //Check and list all books
+    private int ListAllBooks(){
+        return 0;
     }
 }
